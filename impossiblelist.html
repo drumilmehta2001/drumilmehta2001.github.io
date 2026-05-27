@@ -1,47 +1,340 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impossible List | Drumil Mehta</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Impossible List | Drumil Mehta</title>
+<link href="style.css" rel="stylesheet"/>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body class="impossible-page">
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">DM</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#timeline">Experience</a></li>
-                <li><a href="#" class="active">Impossible List</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="impossible-list-section">
-        <div class="impossible-container">
-            <h2>The Impossible List</h2>
-            <p class="impossible-intro">A living document of my life goals and the impossible things I plan to accomplish.</p>
-            <div class="list-card">
-                <h3>To be fine-tuned...</h3>
-                <ul>
-                    <li>Placeholder Goal 1</li>
-                    <li>Placeholder Goal 2</li>
-                    <li>Placeholder Goal 3</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Drumil Mehta</p>
-    </footer>
-
-    <script src="script.js"></script>
+<nav class="navbar">
+<div class="nav-content">
+<a class="logo" href="index.html">DM</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#timeline">Experience</a></li>
+<li><a class="active" href="#">Impossible List</a></li>
+</ul>
+</div>
+</nav>
+<section class="impossible-list-section">
+<div class="container impossible-container" style="padding-top: 100px; max-width: 800px; margin: 0 auto; min-height: 80vh;">
+<p style="margin-bottom: 2rem; color: var(--text-dark-secondary); font-size: 1.1rem;">I'm keeping my list public to encourage myself to update it and to get other people to start their very own lists as well.</p>
+<h2 style="font-size: 2rem; font-weight: 400; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-dark);">Real Client Managed Portfolios (RCMP) &amp; Quant Trading Goals</h2>
+<ul class="impossible-ul">
+<li>Develop proprietary Options Strategies
+                    <ul>
+<li><del>Master Collar, Straddle/Strangle, Bull/Bear Spread, Butterfly, and Cash Secured Puts</del> — Accomplished</li>
+<li>Build real-time options volatility simulators (focusing on Delta-Neutral, Long/Short Vega)</li>
+<li><del>Identify and exploit mispricings between Implied Volatility (IV) and Historical Volatility (HV)</del> — Accomplished</li>
+<li>Trade options on futures contracts (e.g., E-mini S&amp;P 500 /ES) for superior leverage</li>
+</ul>
+</li>
+<li>Advanced Trade Execution &amp; Algo Trading
+                    <ul>
+<li><del>Build a high-frequency trading (HFT) bot utilizing FIX Protocol and IB Gateway</del> — Accomplished</li>
+<li>Implement Statistical Market Making (e.g., Avellaneda-Stoikov model)</li>
+<li>Deploy a Linux VPS for headless 24/7 automated trading (Grid Trading)</li>
+<li>Protect algorithms from getting "steamrolled" by hard trends and liquidity flushes</li>
+</ul>
+</li>
+<li>Technical &amp; Chart Pattern Mastery
+                    <ul>
+<li>Apply William O'Neil's principles ("How to Make Money in Stocks") and track follow-through days</li>
+<li>Expand Fibonacci series analysis (1/8th, 3/8ths) to spot explosive reversals</li>
+<li>Master ICT (Inner Circle Trader) concepts and Fair Value Gaps</li>
+</ul>
+</li>
+</ul>
+<h2 style="font-size: 2rem; font-weight: 400; margin-top: 3rem; margin-bottom: 1rem; color: var(--text-dark);">Macro-Economic Research Goals</h2>
+<h3 style="font-size: 1.2rem; font-weight: 600; margin-top: 1rem; color: var(--text-dark-secondary);">Bloomberg Chart Active Trackers</h3>
+<div style="overflow-y: auto; max-height: 500px; margin-bottom: 1.5rem; background: var(--card-light); border: 1px solid var(--border-light); border-radius: 8px;">
+<table style="width: 100%; border-collapse: collapse; color: var(--text-dark); font-size: 0.9rem; text-align: left;">
+<thead style="position: sticky; top: 0; background-color: var(--bg-light); z-index: 1;">
+<tr style="border-bottom: 2px solid var(--border-light);">
+<th style="padding: 12px 15px;">Ticker</th>
+<th style="padding: 12px 15px;">What It Measures</th>
+<th style="padding: 12px 15px;">Current</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">TMNOXTM%</td>
+<td style="padding: 12px 15px;">US Manufacturers New Orders Ex-Transportation, MoM%</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">630448.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">DGNOXTCH%</td>
+<td style="padding: 12px 15px;">US Durable Goods New Orders Ex-Transportation, MoM%</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">212178.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">CGNOXA1%</td>
+<td style="padding: 12px 15px;">US Capital Goods New Orders Ex-Aircraft &amp; Defense</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">82960.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">WTICMD Index</td>
+<td style="padding: 12px 15px;">WTI Crude Oil</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">93.29</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">CDTSPRD U Index</td>
+<td style="padding: 12px 15px;">Credit Spreads (OAS)</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">5.20</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPX Index</td>
+<td style="padding: 12px 15px;">S&amp;P 500 Index</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">7519.12</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SMVLG U Index</td>
+<td style="padding: 12px 15px;">Small cap value vs large cap growth (Small cap vs S&amp;P)</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">1.7085</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SMAVG</td>
+<td style="padding: 12px 15px;">Moving Average</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">RTO/RTY/R2K</td>
+<td style="padding: 12px 15px;">Russell 2000 (Small cap index)</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">2920.54</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">RTYFWDPE U Index</td>
+<td style="padding: 12px 15px;">Forward 12-month PE RTY</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">FXISPY U Index</td>
+<td style="padding: 12px 15px;">China large cap FXI divided by SPX</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">0.0476</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">EEMSPY U Index</td>
+<td style="padding: 12px 15px;">Emerging market to SPY</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">0.0911</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">EFASPY U Index</td>
+<td style="padding: 12px 15px;">Developed markets (Japan, US, Europe) / SPY</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">0.1401</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">ICOLCOTW Index</td>
+<td style="padding: 12px 15px;">Total global liquids consumption (oil + refined products)</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">ICOLSUTW Index</td>
+<td style="padding: 12px 15px;">Oil supply</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPEDACTL</td>
+<td style="padding: 12px 15px;">S&amp;P Earnings or Earning Revisions</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">USLFTTOT</td>
+<td style="padding: 12px 15px;">US Labor force / Total Employment</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">169995.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">GDGCAFJP</td>
+<td style="padding: 12px 15px;">Atlanta GDP Nowcast</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPXFWDFPE</td>
+<td style="padding: 12px 15px;">S&amp;P Forward P/E</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">MKT_PM U Index</td>
+<td style="padding: 12px 15px;">Corporate profit margins</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">NFCIINDX</td>
+<td style="padding: 12px 15px;">Leading indicator for market stress</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">-0.52</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPX10TE</td>
+<td style="padding: 12px 15px;">Rolling 10-year correlation (S&amp;P 500 and 10-year Treasury)</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">UX3 Index</td>
+<td style="padding: 12px 15px;">3-month implied Treasury rate</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">3.68</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">NDX Index</td>
+<td style="padding: 12px 15px;">Nasdaq 100</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">30001.32</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">ARMS Index</td>
+<td style="padding: 12px 15px;">Ratio of Rising Stock / Volume of Rising Stock</td>
+<td style="padding: 12px 15px;">-</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">JOLTHIRS</td>
+<td style="padding: 12px 15px;">Job hiring</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">5554.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">JOLTLAYS</td>
+<td style="padding: 12px 15px;">Job layoff</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">1867.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">JOLTQUTS</td>
+<td style="padding: 12px 15px;">Job Quit</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">3171.00</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">BTC1 Curncy</td>
+<td style="padding: 12px 15px;">Measure of risk appetite (Bitcoin Futures)</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">75855.36</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">CPIFCAST U Index</td>
+<td style="padding: 12px 15px;">Geometric index of inflation</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">DOWGOLD U Index</td>
+<td style="padding: 12px 15px;">Dow/Gold performance</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">11.1651</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">TRANUTY</td>
+<td style="padding: 12px 15px;">Transportation stock v/s utility</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">18.7042</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">RSPSPY</td>
+<td style="padding: 12px 15px;">Equal weighted (RSP) vs S&amp;P</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">0.2766</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPX_CAPE</td>
+<td style="padding: 12px 15px;">Cyclically Adjusted Price-to-Earnings of S&amp;P</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SML_CAPE</td>
+<td style="padding: 12px 15px;">S&amp;P SmallCap 600 CAPE</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SBOITOTL</td>
+<td style="padding: 12px 15px;">Small Business Optimism Index</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">FF3 COMB COMDTY</td>
+<td style="padding: 12px 15px;">Fed 3 month future</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SML Index BEst EPS</td>
+<td style="padding: 12px 15px;">Forward looking earning estimate</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">EPUCREGU</td>
+<td style="padding: 12px 15px;">Economic Policy Anxiety Inverted</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">S1 COMB COMDTY</td>
+<td style="padding: 12px 15px;">Soya Bean Futures</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">1185.50</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">ES1</td>
+<td style="padding: 12px 15px;">S&amp;P E-Mini Futures</td>
+<td style="padding: 12px 15px; color: var(--color-green); font-weight: 600;">7542.25</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">SPYEFA</td>
+<td style="padding: 12px 15px;">S&amp;P divided by Developed Countries (EFA)</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">GSUSDTWI</td>
+<td style="padding: 12px 15px;">Goldman Sachs USD Trade Weighted Index</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">EQRV</td>
+<td style="padding: 12px 15px;">Equity risk value (S&amp;P 600 - S&amp;P 500)</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+<tr style="border-bottom: 1px solid var(--border-light);">
+<td style="padding: 12px 15px; font-family: monospace;">TSATTPCY</td>
+<td style="padding: 12px 15px;">TSA Checkpoint traveler counts</td>
+<td style="padding: 12px 15px; color: #9ca3af; font-style: italic;">N/A (Proprietary/Delayed)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="impossible-ul">
+<li><del>Conduct deep Macro Analysis using Bloomberg Charts</del> — Accomplished
+                    <ul>
+<li>Track SMVLG U Index (Small cap value vs large cap growth)</li>
+<li>Monitor Corporate profit margins (MKT_PM) and the Atlanta GDP Nowcast (GDGCAFJP)</li>
+<li>Analyze rolling 10-year correlation between the S&amp;P 500 and 10-year Treasury</li>
+<li><del>Evaluate economic policy anxiety and its effect on small caps</del> — Accomplished</li>
+</ul>
+</li>
+</ul>
+<h2 style="font-size: 2rem; font-weight: 400; margin-top: 3rem; margin-bottom: 1rem; color: var(--text-dark);">FMS Theory &amp; Accounting Goals</h2>
+<ul class="impossible-ul">
+<li>Master FMS Theory &amp; Financial Modeling
+                    <ul>
+<li><del>Deep dive into Yield Definitions, Net Working Capital (NWCap), and ETF structures</del> — Accomplished</li>
+<li><del>Develop Reverse DCF models and LBO Theory (Burger King LBO)</del> — Accomplished</li>
+</ul>
+</li>
+<li>Advanced Excel Automation
+                    <ul>
+<li>Implement complex array operations (Vstack, HStack, Index Match, Filter)</li>
+<li>Utilize Goal Seek, Data Tables, and Solver for optimization models</li>
+</ul>
+</li>
+<li><del>Master advanced Financial Accounting Standards (e.g., DTA &amp; DTL, Employee Compensation)</del> — Accomplished</li>
+</ul>
+<h2 style="font-size: 2rem; font-weight: 400; margin-top: 3rem; margin-bottom: 1rem; color: var(--text-dark);">FRM, Interview Prep &amp; Career Goals</h2>
+<ul class="impossible-ul">
+<li>Pass Financial Risk Manager (FRM) Part 1 &amp; Part 2</li>
+<li>Ace Quant Interviews
+                    <ul>
+<li><del>Master "A Practical Guide to Quantitative Finance Interviews" (Green book)</del> — Accomplished</li>
+<li><del>Master Probability Concepts and Data Structures &amp; Algorithms (DSA)</del> — Accomplished</li>
+</ul>
+</li>
+<li>Secure a Risk Analyst Role</li>
+<li>Secure a Portfolio Manager (PM) Role</li>
+</ul>
+</div>
+</section>
+<footer>
+<p>© 2026 Drumil Mehta</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

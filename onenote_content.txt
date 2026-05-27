@@ -1,0 +1,1203 @@
+﻿Notebook: APM | Section: APM | Page: Class 3
+--------------------------------------------------------
+Class 3
+&lt;&lt;
+
+
+Notebook: APM | Section: APM | Page: Class 4
+--------------------------------------------------------
+Class 4
+Beta to a factor just as important as alpha
+
+
+Notebook: APM | Section: APM | Page: Class 6
+--------------------------------------------------------
+Class 6
+
+
+
+
+We performed better than benchmark by 2.3% (overall return of portfolio = 6.066%)
+
+
+Notebook: APM | Section: APM | Page: Strategies
+--------------------------------------------------------
+Strategies
+De-grossing
+
+Bottom Fishing
+
+Carry trade
+
+Powells trade strategy - 
+
+
+Capital structure arbitrage (eg volkswagen has 2 classes of shar - 1 with voting rights and 1 without voting rights) so buy &amp; short sell betting that prices will converge
+
+
+
+
+Notebook: APM | Section: Options Strategies | Page: Collar
+--------------------------------------------------------
+Collar
+
+
+Notebook: APM | Section: Options Strategies | Page: Put Spread Collar
+--------------------------------------------------------
+Put Spread Collar
+
+
+Notebook: APM | Section: Options Strategies | Page: Straddle / Strangle
+--------------------------------------------------------
+Straddle / Strangle
+
+
+Notebook: APM | Section: Options Strategies | Page: Bull / Bear Spread
+--------------------------------------------------------
+Bull / Bear Spread
+
+
+Notebook: APM | Section: Options Strategies | Page: Butterfly Theory
+--------------------------------------------------------
+Butterfly Theory
+
+
+Notebook: APM | Section: Options Strategies | Page: Split Strike Call Butterfly
+--------------------------------------------------------
+Split Strike Call Butterfly
+
+
+Why asymmetric (2500/2700/2800 instead of 2500/2700/2900)
+
+The asymmetry gives you a softer landing on the upside.
+
+
+People buy options on futures contracts instead of stocks to gain massive leverage, avoid strict margin requirements, and trade in markets that are virtually impossible to access via standard equities.&nbsp;
+1. Superior Leverage and Capital Efficiency
+Options on futures offer extreme leverage. A relatively small premium allows an investor to control a massive underlying notional value. For example, a single option contract on the E-mini S&amp;P 500 (/ES) controls exposure to 50 times the S&amp;P 500 index value.&nbsp;
+2. Built-In Limited Risk
+While futures contracts carry theoretically infinite downside (requiring you to post more money if the trade goes against you, known as margin calls), buying an option on a future caps your absolute maximum loss at the premium (the price you paid for the option).&nbsp;
+3. Avoiding Strict Margin Calls
+Futures themselves are &quot;marked to market&quot; daily, requiring traders to maintain specific cash balances in their accounts at the end of every trading day. If the market drops, the broker requires more capital instantly. Buying options eliminates this overnight mark-to-market stress because your position is fully paid for upfront.&nbsp;
+4. Access to Commodities and Hard Assets
+You cannot directly buy or short stocks of certain commodities like crude oil, gold, or wheat. Options on futures provide a vehicle to speculate on or hedge against the price swings of physical raw materials, interest rates, and global currencies.&nbsp;
+5. Round-the-Clock Flexibility
+Futures markets—and by extension, options on many futures—trade almost 24/5. This allows investors to react to global news, earnings reports, or geopolitical events outside of regular U.S. stock market hours (9:30 AM to 4:00 PM EST).&nbsp;
+The further out an options contract is, the more expensive the premium, because there’s more likelihood the option will expire ITM. So as time goes on, and the expiry date gets closer, the value of the option will decrease. Thus, Theta is negative because the option gets cheaper as time goes forward.
+This Trade is effectively a -
+A derivative of a derivative (option on a future)
+Two layers of time decay working against them
+Futures basis risk (futures price ≠ spot price, especially near expiry)
+Contract roll — futures expire, spot doesn't. You have to actively manage expiry.
+
+
+Notebook: APM | Section: Options Strategies | Page: Christmas Tree
+--------------------------------------------------------
+Christmas Tree
+
+
+Notebook: APM | Section: Options Strategies | Page: Cash Secured Puts
+--------------------------------------------------------
+Cash Secured Puts
+
+
+Notebook: APM | Section: Options Strategies | Page: Excell's CME Trades
+--------------------------------------------------------
+Excell's CME Trades
+What normal looks like: In most assets puts are more expensive than calls (people pay more to hedge downside). So put IV &gt; call IV. That's called negative skew.
+The back of the surface (December, ETHZ6) is elevated entirely — the whole smile floats higher. More uncertainty priced in further out in time.
+In a normal fearful market, the surface tilts left — puts tower over calls. When you see the call wing getting closer in height to the put wing, it means the market is starting to price in upside risk too, which would signal a sentiment shift. Right now ETH's surface is still tilted left — fear dominant — which is exactly why buying calls is cheap relative to the risk the writer thinks is real.
+
+
+Notebook: APM | Section: Trading Strategies | Page: Algo Trade Ideas
+--------------------------------------------------------
+Algo Trade Ideas
+Trading view for viewing charts
+
+Exchange from where you place your trades eg - interactive brokers
+
+
+
+
+real-time options volatility simulator (focusing on Delta-Neutral, Long/Short Vega strategies like Straddles and Iron Condors) to identify mispricings between Implied Volatility (IV) and Historical Volatility (HV).
+
+Don't look at price charts but instead look at volatility and delta neutral for that volatility
+
+
+
+
+Something like this, where stop loss was below as shown but once the price went upwards and bos happened then reduce stop loss to above red horizontal line to make profit from the blue zone
+
+
+FIX (Financial Information Exchange) protocol - used by institutions and hedge funds for info sharing
+
+Level 1 vs Level 2 trading quotes - level 1 is basic market and level 2 is order book and more depth of market info for traders but sniper algos like b goldman and others hide this 
+
+
+How to tackle this and other strategies? Is there any way?
+
+If this is true then how to protect against this?
+
+
+
+
+
+
+
+
+\Bottoming Tail the lower candle wick is too big so seller momentum was more but buyer didn’t allow it so it closed little up so if after this a new green candle emerges, then u just place the order for upside candle movements
+
+Check if average volume or float for today in pre market is higher than the usual volume (5x)
+Check if the price is &lt;20 and &gt;2
+Make some form of ratio like 1:2 loss to win ratio
+Then check catalyst in market for this stock like whats driving it up is it bio tech stock or what?
+
+
+
+
+
+
+
+
+
+
+FPGA do we need this for algo trading or iske bina kaam chal jayega?
+
+
+
+Something like this HFT bot
+
+It is using Average True Range (volatility) to decide how wide to set its spreads. If the market gets too &quot;crazy,&quot; the bot will widen its quotes to avoid getting &quot;run over&quot; by a big trend.
+Thresholds &amp; Floors: You see Profit Floor: 40.0bps. This is the bot's minimum required &quot;edge.&quot; It won't take a trade unless it can capture at least 0.40% in profit from the bid-ask spread.
+Asks only above $4695: The bot is acting as a &quot;Market Maker,&quot; sitting on both sides of the book simultaneously to collect the spread.
+
+
+
+This is on bybit exchange, what is it?
+
+He used 
+roboquant subscription for this and 
+Avellaneda -Stoikov market making model what is this and I need a strategy that doesn’t require collocation             
+
+Why isn't he banned by broker?
+Why? Putting limit orders in the market is beneficial for the broker. Only b-book brokers don't want HFT
+
+
+The &quot;Grid Trading&quot; Strategy (Statistical Market Making)
+This is the retail version of Avellaneda-Stoikov. It works best in &quot;Sideways&quot; or &quot;Ranging&quot; markets.
+The Logic: You place a &quot;grid&quot; of limit orders above and below the current price.
+The Execution: * As price dips, it hits your Buy Limits.
+As it bounces, it hits your Sell Limits.
+You are essentially &quot;harvesting&quot; the noise of the market.
+Why no colocation? Because you aren't trying to &quot;beat&quot; someone to a price. Your orders are already sitting there (resting) on the book. You are waiting for the market to come to you.
+If your bot is making a market and a CHoCH happens, the price will trend hard in one direction. Your bot will get &quot;Steamrolled&quot; (it will keep buying as the price crashes).
+The Fix: Program your bot to Shut Down if it detects a CHoCH on a higher timeframe.
+My Recommendation for Your Model
+Since you are a developer, start by running your script locally while you are awake to debug the BOS/CHoCH logic.
+Once you trust the code, move it to a Linux VPS. This is very cheap (around $5–$10/month) and allows you to use the FIX Protocol or REST API reliably. Because IBKR requires TWS or the &quot;IB Gateway&quot; to be running, you would install a &quot;Headless&quot; version of the IB Gateway on that Linux server.
+2. How the &quot;Headless&quot; Setup Works
+Since a VPS usually doesn't have a screen (no desktop or mouse), you interact with it via a text terminal called SSH.
+To run your IBKR bot 24/7, you use the IB Gateway. This is a &quot;light&quot; version of TWS that has no charts—just the &quot;pipes&quot; to connect your Python code to the exchange.
+The Architecture:
+IB Gateway: Runs in the background on the Linux VPS. It stays logged into your account.
+Your Python Bot: Also runs on the VPS. It connects to the Gateway via localhost (port 4001).
+IBC (IB Controller): Since the Gateway usually requires you to click &quot;Login&quot; every day, we use an open-source tool called IBC to automatically handle the login and &quot;Keep Alive&quot; signals.
+William o neil book how to make money in stocks
+
+Expand fib series (1 8th of quarter, 1 half of quarter, 3 eights of number and if &gt; half or 50% of those lines then that means bulls are in control on 30 minute charts and always look where its closing relative to fib numbers
+
+Up Dpwn Trading ration of last 50 days
+
+Screen to find the script (stocks) that you think have some momentum ? Find this 
+
+Also; on a stock u select first make lines from highest top to lowest bottom and when 8th number holds what u expect? Ans - Explosive reversals; idk if this is fib horizontal lines or what but its 8 lines equally dividing the top and the bottom
+
+What is belthold? It held at belthold which is 8th line and then explosive hold for AAOI stock daily
+
+Island reversal
+
+10 day moving average best to assess risk as the stock come back to retest the MA 10 day (the further u extend the bigger measure of risk)
+
+William o neil Follow through day buy and sell signal (there hasn’t been a bull market that started through folow through trend)
+
+Volume is one of the things that make stock move
+
+Dont trade on news but on how market respond to news
+
+
+TC2000 software or dynamic trader version for trading and seeing which sectors and subsectors up
+
+Expand fibonachi on downside and then look at 8 lines and 1.618 number how it kind of aligns
+
+Free newsletter - tfrtrader.com
+
+David wasniack cmt
+
+
+
+
+Make these 5 rules probabilistic ie trade if u think their prob is high to occur for each case and mix with william o neil or think of something
+
+
+
+
+Notebook: APM | Section: Trading Strategies | Page: Technical Analysis
+--------------------------------------------------------
+Technical Analysis
+
+
+
+Professional traders and algorithms know that thousands of retail traders have &quot;latent&quot; sell orders sitting just below a recent &quot;Low.&quot;
+
+The Trigger: If the price is pushed just a tiny bit below that Low, it triggers all those latent stop orders at once. This creates a &quot;liquidity flush&quot; where the price drops rapidly because all those sleeping orders suddenly became active market orders.
+
+
+The price is moving up. This is driven by institutional buying. However, as the price rises, it eventually hits a &quot;Weak High.&quot; * Why &quot;Weak&quot;? Because the institutions have temporarily run out of &quot;buy&quot; orders, and retail traders start selling, thinking the price is too high.
+
+Price will return near fair value gap sometime in future
+Now we need some buy signal to profit from increase in price so look at higher lows and draw the line 
+
+2 wave could make make 0.618 fib rebound
+
+3 wave should be longest amongst 1,3,5
+
+
+
+
+Notebook: APM | Section: Trading Strategies | Page: ICT
+--------------------------------------------------------
+ICT
+
+
+Notebook: APM | Section: Trading Strategies | Page: Chart Patterns
+--------------------------------------------------------
+Chart Patterns
+
+
+Notebook: APM | Section: Quant Strategies | Page: Statistics
+--------------------------------------------------------
+Statistics
+The law of large numbers (LLN) states that&nbsp;as the number of independent, identically distributed (i.i.d.) trials increases, their average approaches the theoretical expected value. 
+
+This theorem guarantees stable long-term results for random events.
+
+
+Notebook: APM | Section: Quant Strategies | Page: Algorithmic Trading
+--------------------------------------------------------
+Algorithmic Trading
+
+
+Notebook: APM | Section: Macro Analysis | Page: Bloomberg Charts
+--------------------------------------------------------
+Bloomberg Charts
+SMVLG U Index
+Small cap value vs large cap growth (Small cap vs S&amp;P)
+SMAVG
+Moving Average
+RTO/RTY/R2K
+Russell 2000 (Small cap index)
+RTYFWDPE U Index
+Forward 12-month PE RTY
+FXISPY U Index
+China large cap called FXI divided by SPX
+EEMSPY U Index
+Emerging market to SPY
+EFASPY U Index
+Developed markets eg – Japan, US, Europe/SPY
+ICOLCOTW Index
+Total global liquids consumption (oil + refined products)
+ICOLSUTW Index
+Oil supply
+SPEDACTL
+S&amp;P Earnings or Earning Revisions
+USLFTTOT
+US Labor force/ Total Employment (Lags to S&amp;P Earning &amp; New order)
+GDGCAFJP
+Atlanta GDP Nowcast
+SPXFWDFPE
+S&amp;P Forward P/E
+MKT_PM U Index
+Corporate profit margins
+NFCIINDX
+Leading indicator for market stress (rises =&gt; stress)
+SPX10TE
+Rolling 10-year correlation between the S&amp;P 500 and the 10-year Treasury total return index
+UX3 Index
+3-month implied Treasury rate
+NDX Index
+Nasdaq 100
+ARMS Index
+Ratio of Rising Stock / Volume of Rising Stock; &lt;1 =&gt; Bullish; &gt;1 =&gt; Bearish
+JOLTHIRS
+Job hiring
+JOLTLAYS
+Job layoff
+JOLTQUTS
+Job Quit
+BTC1 Curncy
+Measure of risk appetite
+CPIFCAST U Index
+Geometric index of inflation made with 4 variables (inflation expectations, money supply, commodity prices, producer prices)
+DOWGOLD U Index
+Dow/Gold performance; when inflation increase, gold increase
+TRANUTY
+Transportation stock v/s utility
+RSPSPY
+Equal weighted (Invesco S&amp;P 500 Equal Weight ETF) vs S&amp;P
+SPX_CAPE
+Cyclically Adjusted Price-to-Earnings of S&amp;P to average inflation-adjusted earnings of the last 10 years; CAPE looks backwards; That’s why equity analyst look forwards;
+SML_CAPE
+S&amp;P SmallCap 600 to average inflation-adjusted earnings of the last 10 years
+SBOITOTL
+Small Business Optimism Index. This is the companies themselves telling you how they feel
+FF3 COMB COMDTY
+Fed 3 month future (represent the market’s expected&nbsp;average&nbsp;overnight&nbsp;rate for future); Price=100−Implied&nbsp;Fed&nbsp;Funds&nbsp;Rate
+SML Index BEst EPS
+Forward looking earning estimate
+EPUCREGU
+Economic Policy Anxiety Inverted; As regulations fall, small caps do better
+S1 COMB COMDTY
+Soya Bean Futures
+ES1
+S&amp;P E Mini Futures`
+SPYEFA
+S&amp;P divide by Europe, Australia, Japan jaise developed country
+GSUSDTWI
+Goldman Sach USD Trade Weighted Index (Dollar performance vs. each country it trades with weighted by the amount of trade. This is where you would feel the effects of a strong&nbsp;)
+&nbsp;EQRV
+Equity risk value = s&amp;p600 - s&amp;p500
+&nbsp;TSATTPCY
+TSA Checkpoint traveler counts each day at airports (consumer sentiment)&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+market is Overreacting in Sentiment (P/E drop) but Underreacting in Fundamentals (Earnings growth). They are suggesting that once the &quot;uncomfortable conflict&quot; is resolved, the market could rocket higher
+ISM Manufacturing PMI
+NAPMPMI Index  (R2)
+ISM Non Manufacturing
+NAPMNMI Index  (L2)
+Initial Jobless Claims, 4 wk avg
+INJCJC4 Index  (R1)
+US Capacity Utilization
+CPTICHNG Index  (L1)
+US Leading Indicator
+LEI YOY Index  (R3)
+Yield Curve (10-year less 2-year)
+USYC2Y10 Index  (R4)
+Global Leading Indicator
+MEPRGLEI Index  (L3)
+Railroads Freight Index, 12M Chg
+RAILORGT Index  (R1)
+Leading -Lagging Economic Indicator Spread
+LAGILAGY Index  (R1)
+US rel. to World Stock Index
+SPX/MSCI World Index
+
+Earnings reports are a look in the rearview mirror. A company can report a 60% historical beat, but if management warns about future margin compression, weaker consumer demand, or lowers their forward guidance during the earnings call, institutional money will sell the stock regardless of the current quarter's success.
+Baltic Dry Index
+BDIY Index  (R1)
+Global Economic Momentum
+M1WOMOM Index - Last Price
+Manufacturing New Orders excluding Transportation
+TMNOXTM% Index  (L2)
+Retail Sales ex Transportation
+RSTAXMOM Index  (L3)
+New Housing Permits
+NHSPSTOT Index  (R1)
+Credit Spread Moody AAA-BAA
+AAA-BBB Moody Spread
+Michigan Consumer Sentiment
+CONSSENT Index  (L4)
+Net Company Revisions (3M Avg)
+PCUSEQTR Index  (R1)
+NAPM % Surprise (3M Wt Avg)
+ECSURPUS Index  (L1)
+JULIS, Inv Grade USD Corp Bond, Spread over Treasury
+LUACOAS Index  (R2)
+Citigroup Economic Surprise Index
+CESIUSD Index  (R1)
+VIX
+VIX Index  (R4)
+Dow Transportation/Utilities, 12M Chg
+TRAN Index / UTIL Index
+Barclay's Investment Grade Spread
+USOAIGTO Index  (R1)
+Barclay's High Yield Spread
+LF98OAS Index  (R2)
+Term Structure of Momentum, Diffusion Index
+BSLUSEQM Index  (R3)
+Stock Market, 3Yr Chg
+Stock 3 Year CHNG
+Margin Debt, level
+NFCINBDG Index  (R1)
+Margin Debt, % of Market Cap
+NFCIABDG Index  (L1)
+Loan Officers Survey
+NFCIACRE Index  (R1)
+M2, 12M %Change
+M2% YOY Index  (L2)
+10Yr Bond Yield, Real Rate
+USGG10YR Index  (L1)
+Term Structure of Fed Fund Futures
+USGG2YR - FEDL01
+USD Trade Weighted
+DXY Curncy  (R2)
+Avg Treasury Trading Vol % of Marketable Debt
+PDPLGOVT / PUBLDEBT
+US Credit Manager's Index
+NACCCMI Index  (L1)
+Free Liquidity
+M2%YoY - IP YoY
+To understand  how sustainable earnings growth is, you look at the FCF 
+Earnings Yield Dispersion
+SGX Earning Yield - SVX Earning Yield
+Real Loan Growth
+ALCBLOAN Index - Last Price
+ISM Prices Index, 12M Chg
+NAPMPRIC Index  (L2)
+PPI, YoY%
+PPI YOY Index  (L1)
+Unit Labor Cost, 12M Chg
+SBOICMPP Index  (R1)
+US Import Price Inflation
+IMP1CHNG Index  (R1)
+Wage Trend Index 12M Chg
+USHETOT Index  (L1)
+Breakeven Inflation, 10Yr
+FED5YEAR + USLV10Y
+Oil Price, WTI
+CL1 COMB Comdty  (L1)
+Commodity Price
+CRB CMDT Index  (L2)
+Median Home Price, 12M Chg
+ETSLMP Index  (R2)
+
+
+
+Because energy and industrials are mature industries they deserve stable moderate PE ratios not higher like technologies
+
+
+
+
+
+
+
+For White, Orange:
+Negative = loose/easy financial conditions
+Positive = tight conditions
+
+
+Notebook: APM | Section: FMS Theory | Page: Yield Definitions
+--------------------------------------------------------
+Yield Definitions
+It issues them, collects the cash to pay for government programs (like roads or the military), and eventually pays the bondholders back with interest.
+FIND OUT WHAT IT IS AND CLEAR THIS DOUBT ONCE AND FOR ALL
+
+
+Notebook: APM | Section: FMS Theory | Page: NWCap
+--------------------------------------------------------
+NWCap
+i.e.
+Ie cash not received and goods sold on credit
+
+
+Notebook: APM | Section: FMS Theory | Page: ETFs Definitions
+--------------------------------------------------------
+ETFs Definitions
+&quot;Breaking the buck&quot; occurs when a money market fund's net asset value (NAV) falls below $1 per share, meaning investors lose part of their principal. As money market funds aim for a stable $1 share price, this rare event signifies severe financial distress, often leading to mass redemptions and investor panic.
+
+
+Notebook: APM | Section: FMS Theory | Page: All Ratios
+--------------------------------------------------------
+All Ratios
+Dupont
+
+Turnover
+
+Dividend yield
+
+Other faltu ratios
+
+
+
+
+Notebook: APM | Section: FMS Theory | Page: LBO Theory
+--------------------------------------------------------
+LBO Theory
+
+
+Notebook: APM | Section: Excel | Page: Sticky If's
+--------------------------------------------------------
+Sticky If's
+
+
+Notebook: APM | Section: Excel | Page: Vstack, HStack
+--------------------------------------------------------
+Vstack, HStack
+
+
+Notebook: APM | Section: Excel | Page: Index Match
+--------------------------------------------------------
+Index Match
+
+
+Notebook: APM | Section: Excel | Page: Filter
+--------------------------------------------------------
+Filter
+
+
+Notebook: APM | Section: Excel | Page: Goal Seek
+--------------------------------------------------------
+Goal Seek
+
+
+Notebook: APM | Section: Excel | Page: Data Tables
+--------------------------------------------------------
+Data Tables
+
+
+Notebook: APM | Section: Excel | Page: Solver
+--------------------------------------------------------
+Solver
+
+
+Notebook: FRM | Section: Market Risk | Page: Page 48
+--------------------------------------------------------
+Page 48
+
+
+Notebook: FRM | Section: Market Risk | Page: Page 50
+--------------------------------------------------------
+Page 50
+
+
+Notebook: FRM | Section: Credit Risk | Page: Page 54
+--------------------------------------------------------
+Page 54
+
+
+Notebook: FRM | Section: Operational Risk | Page: Page 72
+--------------------------------------------------------
+Page 72
+
+
+Notebook: FRM | Section: Liquidity Risk | Page: Page 57
+--------------------------------------------------------
+Page 57
+
+
+CDO/CM0 =&gt; C =&gt; COMPLEX SO TRANCHES
+
+
+Notebook: FRM | Section: Liquidity Risk | Page: Bid-Ask Chapter 1
+--------------------------------------------------------
+Bid-Ask Chapter 1
+
+
+
+
+
+
+
+
+Middle = bid ask spread = maximum satisfaction for buyers and sellers
+
+
+
+
+Notebook: Accounting | Section: Emp Compensation | Page: CF Statement
+--------------------------------------------------------
+CF Statement
+but won't that mean double counting? before 2017 we used to subtract then add = 0 net but now we add and dont subtract so its double counting?
+
+
+Notebook: Accounting | Section: Emp Compensation | Page: Employee Compensation
+--------------------------------------------------------
+Employee Compensation
+
+
+Notebook: Accounting | Section: Taxes | Page: DTA & DTL
+--------------------------------------------------------
+DTA &amp; DTL
+DTA = when tax accounting on books is &gt; actual taxable income
+SLM depreciation &gt; Accelerated depreciation for tax purposes
+(+) on Income statement in new line item DTA
+
+On CF Statement, (-) DTA as outflow now
+
+
+
+DTL = (+) on CF Statement as it’s a liability, 
+meaning you owe more tax later and saved on cash now as Accounting tax base &lt; Actual Tax base because of accelerated depreciation for the taxable income vs lesser tax from slm method (Hence, a liability as you owe in future) 
+(-) on income statement as a liability so reduce NI
+
+
+
+
+Notebook: Quant Strategies | Section: Quant | Page: Green book
+--------------------------------------------------------
+Green book
+
+
+Notebook: Quant Strategies | Section: Quant | Page: MIT Concepts Refer SS
+--------------------------------------------------------
+MIT Concepts Refer SS
+
+
+Notebook: Quant Strategies | Section: Quant | Page: DSA
+--------------------------------------------------------
+DSA
+
+
+Notebook: Quant Strategies | Section: Quant | Page: Probability Concepts
+--------------------------------------------------------
+Probability Concepts
+
+
+Notebook: Quant Strategies | Section: PM | Page: Module 1
+--------------------------------------------------------
+Module 1
+
+
+Notebook: Quant Strategies | Section: PM | Page: Module 2
+--------------------------------------------------------
+Module 2
+
+
+
+Notebook: To-Do List | Section: CheckList | Page: 4 Week Proj
+--------------------------------------------------------
+4 Week Proj
+Dtm dcf street based - post afater 15-20 days not now; Yesterday for our client presentation of the apm coursework, I was part of the infra group covering recommendation ofr DTM energy stock; our group, class consesnus was inflationary environment in base case and stagflationary as predicted by JPM model posted last week in worst case ??LIKHU KI NAHI, for next 3-6 months, so argument was whether to hold the oil DTM stock or not under these conditions, for which thesis:… jo bhi hai played out well; 
+
+The DCF valuation model for the same model across factset analyst opinion shows following outcome. Add cover page screenshots and football field and argue that dcf is showing base which is reached by DTM, showing consistent results with what we learned in class and also check if this company beat the beta as a factor to the broad oil and gas sector performance or not and comment on it.
+Special thanks to my team - … for collabboration and prof excell…
+
+My biggest takeaway - 
+One of the biggest lessons for me was how much sector selection and business-model durability matter 
+
+Momrentum stocks in inflationary so research momentum oscillator trading ai bot or something n make one
+
+3rd project idea - options monitor for quant project
+N8n
+GITHUB N COMMIT 1 PROJECT
+RESUME AND LINKEDIN OPTIMIZE
+INDEED IF GET TIME
+STUDY 6,7,8, Wealth MGMT
+SEND ADITYA MESSAGE IN MORNING TOMO OR ABHI RAAT KO AND TRY TO MAKE WEBSITE
+
+
+Website
+Overleaf resume
+Dcf rareliqiud and old videos of dcf to make assumptions more concrete with switch bull bear base
+Excells post option of cme
+FRM Term end
+
+
+
+
+
+
+
+
+Notebook: To-Do List | Section: CheckList | Page: Aditya Meet
+--------------------------------------------------------
+Aditya Meet
+Latex
+
+
+
+
+Notebook: To-Do List | Section: CheckList | Page: Shivani
+--------------------------------------------------------
+Shivani
+House of gold
+Value of Community 
+
+Like-minded people; diversity of people who have something in common; nothing to do with age and  help each other; raising tides raises all ships
+
+Culture = principles and values not religion
+
+Environment in which u allow (inner circle and circle of influence)
+
+Going to gym (development; don't want to show up its boring but it will help long term) vs going to movie (I want to go but won't benefit)
+
+Work together, ask thoughtful questions to each other
+
+
+
+What you have your hands on
+
+Most of us don't know about amway business;  
+Why start with amway? There are resources already in place; u don't need to start from scratch;
+It already has stability infrastructure and things needed to start
+
+Like organic farms, u just have to sell to make money; they also have state of art facilities that store products so u just need to sell;
+
+Shelf life is also maintained by them so customer service is also provided by them not u
+
+IT support - cybersecurity also done by them; they have your back on your business
+
+They package products for your customers
+
+Warehousing &amp; supply chain also done by them and inventory management also done by them (need to have enough inventory on hand to keep customers demand satisfied)
+
+Protect the Goose
+
+Your mind needs to be sharpen and needs to be polished and use it wisely
+
+What u believe to be true and its filled with lot of beliefs and lies and need to be vigilant and ask everything
+
+
+Wellness recommendor - recommends u the products 
+
+
+
+
